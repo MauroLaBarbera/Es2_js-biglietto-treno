@@ -35,15 +35,15 @@ var scontoSenior = 40 * prezzoBiglietto / 100;
 if (età <17) {
     // console.log('Hai diritto allo sconto del 20%');
     var prezzoBiglietto = prezzoBiglietto - scontoMinorenni;
-    document.getElementById('prezzoFinale').innerHTML = 'Hai diritto allo sconto del 20%. Il prezzo del tuo biglietto sarà: ' + prezzoBiglietto + '€';
+    document.getElementById('prezzoFinale').innerHTML = 'Hai diritto allo sconto del 20%. Il prezzo del tuo biglietto sarà: ' + prezzoBiglietto.toFixed(2) + '€';
     // console.log(prezzoBiglietto);
 } else if (età >65) {
     // console.log('Hai diritto allo sconto del 40%');
     var prezzoBiglietto = prezzoBiglietto - scontoSenior;
-    document.getElementById('prezzoFinale').innerHTML = 'Hai diritto allo sconto del 40%. Il prezzo del tuo biglietto sarà: ' + prezzoBiglietto + '€';
+    document.getElementById('prezzoFinale').innerHTML = 'Hai diritto allo sconto del 40%. Il prezzo del tuo biglietto sarà: ' + prezzoBiglietto.toFixed(2) + '€';
 
 } else {
     // console.log('Non hai diritto allo sconto.')
-    document.getElementById('prezzoFinale').innerHTML = 'Non hai diritto allo sconto. Il prezzo del tuo biglietto sarà: ' + prezzoBiglietto + '€';
+    document.getElementById('prezzoFinale').innerHTML = 'Non hai diritto allo sconto. Il prezzo del tuo biglietto sarà: ' + prezzoBiglietto.toFixed(2) + '€';
 
 }
